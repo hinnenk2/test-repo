@@ -80,22 +80,6 @@ footer a {
   font-weight: bold;
 }
 /* End footer code */
-/* End of Semantic code */
-
-/* Start of hero background heading section */
-.hero { /* Here section is a flex container */
-  height: 350px;
-  background-image: url("/Users/ianhinnenkamp/bootcamp/module-2-challenge/assets/images/Mountain.jpeg");
-  background-size: cover; /* Image will cover the background */
-  background-position:  100% 13%; /* Aligned the image to show the top of the tower*/
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  flex-direction: row; /* Row type rather than column type to showcase usage */
-  align-items: flex-end;
-}
-
-/* End of hero background heading section */
 
 /* Start of Main Body code: About-Me*/
 .about-me-wrap {
