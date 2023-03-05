@@ -11,17 +11,17 @@
     <header>
         <span class="background-title">
             <h1>Ian Hinnenkamp</h1>
-            <div class="pop-up">
-                <img src="/Users/ianhinnenkamp/bootcamp/module-2-challenge/assets/images/Smiley.jpeg" alt="Smiley-face">
+            <div>
+                <img src="/Users/ianhinnenkamp/bootcamp/module-2-challenge/assets/images/Smiley.jpeg" alt="Smiley-face"> <!-- Set profile pic. -->
             </div>
         </span>
         <nav>
-            <ul> <!-- Header nav bar -->
+            <ul> <!-- Header bar for navigation-->
                 <li>
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#work">Work</a>
+                    <a href="#app">Applications</a>
                 </li>
                 <li>
                     <a href="#contact-me">Contact Me</a>
@@ -30,86 +30,85 @@
         </nav>
     </header>
 
-    <!-- Hero section will have the image as background -->
+    <!-- Hero section for setting the background image -->
     <section class="hero">
-        <!-- Flex Container-->
-        <div class="hero-subtitle">           
-        </div>
     </section>
 
     <!-- About Me article -->
     <article> 
         <div id="about-me" class="about-me-wrap"> 
-            <div class="about-me-grid-container"> <!-- Set the About-Me containter as a grid container -->
-                <div class="about-me-item about-me-title">
+            <div class="about-me-grid-container"> <!-- Set the About-Me container as a grid container -->
+                <div class="about-me-item">
                     <p> About me </p>
                 </div>
                 <div class="about-me">
-                    <p>I am currently working as a research scientist in the field of gene therapy.  My responsibilities include designing and developing analytical templates for the analysis of raw data exported off of hard instruments.  I have entered the field of coding with regards to the instruments that I work on, so hopefully one day, I can improve on their performance and thoughput.</p>
+                    <p>I am currently apping as a research scientist in the field of gene therapy.  My responsibilities include designing and developing analytical templates for the analysis of raw data exported off of hard instruments.  I have entered the field of coding with regards to the instruments that I app on, so hopefully one day, I can improve on their performance and thoughput.</p>
                 </div>
             </div>
         </div> 
     </article>
 
-    <!--  grid-->
-    <article>
-        <div id="work" class="work-wrap"> <!-- Id's coming from the header nav and a flex wrapper -->
-            <div class="work-grid-container"> <!-- Work projects container is a grid container -->
-                <div class="work-item work-title"> <!-- Each item is a grid item -->
-                    <p> Work </p>
-                </div>
-                <!-- Alt, title (tooltip) and open in new tab functionality added-->
-                <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
-                
-                <section onclick="projectClicked('Horiseon')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" style="cursor: pointer;" class="work-item-project Horiseon">
-                    <span class="background"> <!-- Span added to contain h3, lower text and wrapped background -->
-                        <h3>Horiseon Services</h3>
-                        <span class="text">HTML/CSS</span> <!-- A small class to apply for all grid lower text -->
-                    </span>
+    <!--grid-->
+    <main>
+        <div id="app" class="app-wrap">
+            <div class="app-grid-container"> <!-- Applications are contained in a grid-->
+                <section class="app-item app-title"> <!-- Each app is setup within a grid -->
+                    <p>Applications</p>
                 </section>
-                
-                <!-- All grids below follow same patern as described above until this article container is finished -->
-                <section onclick="projectClicked('TBD')" alt="TBD" title="TBD" style="cursor: pointer;" class="work-item-project A">
-                    <span class="background">
+               
+                 <section alt="Image Displaying the Horiseon landing Page" title="Horiseon Landing Page"  class="app-item-project Horiseon">
+                        <a href="https://hinnenk2.github.io/module-1-challenge">
+                            <h3>Horiseon Services</h3>
+                            <span>HTML/CSS</span>
+                           <img src="/Users/ianhinnenkamp/bootcamp/module-2-challenge/assets/images/Horiseon.jpeg" class="project-1"> 
+                        </a>
+                 </section>
+               
+                <!-- All follow the same repeated grid pattern as above -->
+                <section alt="TBD" title="TBD"  class="app-item-project A">
+                    <a href="">
                         <h3>Still to come...</h3>
                         <span class="text">still to come...</span>
-                    </span>
+                        <img src="" class="project-1">
+                    </a>
                 </section>
-                <section onclick="projectClicked('TBD')" alt="TBD" title="TBD" style="cursor: pointer;" class="work-item-project B">
-                    <span class="background">
+                <section alt="TBD" title="TBD"  class="app-item-project B">
+                    <a href="">
                         <h3>Still to come...</h3>
                         <span class="text">still to come...</span>
-                    </span>
+                        <img src="" class="project-1">
+                    </a>
                 </section>
-                <section onclick="projectClicked('TBD')" alt="TBD" title="TBD" style="cursor: pointer;" class="work-item-project C">
-                    <span class="background">
+                <section alt="TBD" title="TBD"  class="app-item-project C">
+                    <a href="">
                         <h3>Still to come...</h3>
                         <span class="text">still to come...</span>
-                    </span>
+                        <img src="" class="project-1">
+                    </a>
                 </section>
-                <section onclick="projectClicked('TBD')" alt="TBD" title="TBD" style="cursor: pointer;" class="work-item-project D">
-                    <span class="background">
+                <section alt="TBD" title="TBD"  class="app-item-project D">
+                    <a href="">
                         <h3>Still to come...</h3>
                         <span class="text">still to come...</span>
-                    </span>
+                        <img src="" class="project-1">
+                    </a>
                 </section>
-                <section onclick="projectClicked('TBD')" alt="TBD" title="TBD" style="cursor: pointer;" class="work-item-project E">
-                    <span class="background">
+                <section alt="TBD" title="TBD"  class="app-item-project E">
+                    <a href="">
                         <h3>Still to come...</h3>
                         <span class="text">still to come...</span>
-                    </span>
+                        <img src="" class="project-1">
+                    </a>
                 </section>
-
             </div>
         </div>
-    </article>
+    </main>
 
-    <!-- Footer content Grid-->
+    <!-- Footer content code-->
     <footer>
-        <div id="contact-me" class="footer"> <!-- Id's coming from the header nav and a flex wrapper -->
+        <div id="contact-me" class="footer">
             <div class="footer-container"> <!-- footer container is a grid container -->
-                <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
-                <div class="footer-item contact-me"> <!-- Each item is a grid item --> 
+                <div class="footer-item contact-me"> <!-- All elements are set as grid items --> 
                     Contact Me
                 </div>
                 <div class="footer-item phone">
