@@ -4,9 +4,6 @@ HW Assignment for Week-2 Material
 1. [ Description. ](#desc)
 2. [ Web Address. ](#web-address)
 3. [ Usage tips. ](#usage)
-4. [ Contributing. ](#contributing)
-5. [ License. ](#license)
-
 
 <a name="desc"></a>
 ## 1. Description
@@ -43,7 +40,6 @@ Desktop screen:
 Smaller devices screen example:
 
 ![nav-menu](./assets/images/nav-menu.JPG?raw=true "Navigational Menu")
-
 
 
 ### Explore the rest of the page by scrolling up or down.
