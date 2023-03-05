@@ -25,7 +25,7 @@ Smaller devices screen example:
 
 ```html
 
-https://
+https://hinnenk2.github.io/module-2-challenge/
 ```
 <a name="usage"></a>
 ## 3. Usage Tips
