@@ -35,4 +35,4 @@ https://
 
 Desktop screen:
 
-![nav-menu](./assets/images/nav-panel "Navigational Menu")
+![nav-menu](./assets/images/nav-panel.png "Navigational Menu")
