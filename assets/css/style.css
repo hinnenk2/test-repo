@@ -82,12 +82,10 @@ footer a {
 
 /* Start of hero section with background */
 .hero { /* Here section is a flex container */
-  height: 300px;
+  height: 350px;
   background-image: url("/Users/ianhinnenkamp/bootcamp/module-2-challenge/assets/images/Mountain.jpeg");
-
   background-size: cover; /* Image will cover the background */
   background-position:  100% 13%; /* Aligned the image to show the top of the tower*/
-
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -98,7 +96,7 @@ footer a {
 /* End of hero section with background */
 
 /* Start of FLEX CSS Main body code About Me*/
-.about-me-wrapper { /* Flex wrapper */
+.about-me-wrap { /* Flex wrapper */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -133,7 +131,7 @@ footer a {
 
 
 /* Start of FLEX CSS Main body code Work projects*/
-.work-wrapper { /* Flex wrapper */
+.work-wrap { /* Flex wrapper */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -162,7 +160,7 @@ footer a {
 .work-item-project.Horiseon { /* Grid cells with embedded images */
   grid-column: 2 / span 2;
   grid-row: 1 / span 6;
-  background-image: url("../images/challeng-1-refactor-code-smaller.JPG");
+  background-image: url("/Users/ianhinnenkamp/bootcamp/module-2-challenge/assets/images/Horiseon.jpeg");
   background-size: cover; /* Allows the image to autosie to cover the container */
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -175,7 +173,7 @@ footer a {
 .work-item-project.A {
   grid-column: 3 /span 1;
   grid-row: 7 / span 3;
-  background-image: url("../images/A-project.JPG");
+  background-image: url("TBD");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -189,9 +187,8 @@ footer a {
   grid-column: 2 / span 1;
   grid-row: 7 / span 3; 
   /* Royalty free image */
-  background-image: url("../images/B.JPG");
+  background-image: url("TBD");
   background-size: cover;
-  /* Allow the background image to align */
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
   padding-left: 0px;
@@ -204,7 +201,7 @@ footer a {
   grid-column: 4 / span 1;
   grid-row: 1 / span 3;
   /* Royalty free image */
-  background-image: url("../images/C.JPG");
+  background-image: url("TBD");
   background-size: 300px 200px, cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -218,7 +215,7 @@ footer a {
   grid-column: 4 / span 1;
   grid-row: 4 / span 3;
   /* Royalty free image */
-  background-image: url("../images/D.JPG");
+  background-image: url("TBD");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -231,7 +228,7 @@ footer a {
 .work-item-project.E {
   grid-column: 4 /span 1;
   grid-row: 7 / span 3;
-  background-image: url("../images/project1-group07.JPG");
+  background-image: url("TBD");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -243,11 +240,8 @@ footer a {
 
 /* End of FLEX CSS Main body code Work projects*/
 
-
-/* Start of footer class code */
-
 /* CSS Flex/Grid Footer non-semantic Code */
-.footer-wrapper { /* Flex container */
+.footer { /* Flex container */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -263,29 +257,18 @@ footer a {
   gap: 20px 20px; 
 }
 
-.footer-grid-item {
-  text-align: center;
-}
-
-.footer-grid-item.contact-me {
-  padding-top: 10px;
-  font-size: 35px;
+.footer-item.contact-me {
+  font-size: 45px;
   grid-row: 1 / span 3;
   text-align: right;
-  padding-right: 10px;
-  border-right: 2px solid var(--grey);
+  padding-right: 5px;
+  border-right: 2px solid rgb(60, 58, 58);
 }
 
-.footer-grid-item.phone{
-  grid-row: 2;
+.footer-item {
+    text-align: center;
+    grid-row: 2;
 }
 
-.footer-grid-item.email{
-  grid-row: 2;
-}
-
-.footer-grid-item.git-hub{
-  grid-row: 2;
-}
 /* End of footer class code */
 /* End of CSS Flex/Grid Footer non-semantic Code */

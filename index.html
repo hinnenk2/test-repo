@@ -9,11 +9,14 @@
 
 <body>
     <header>
-        <span class="span-background title"> <!-- Class for title background -->
+        <span class="background-title">
             <h1>Ian Hinnenkamp</h1>
+            <div class="pop-up">
+                <img src="/Users/ianhinnenkamp/bootcamp/module-2-challenge/assets/images/Smiley.jpeg" alt="Smiley-face">
+            </div>
         </span>
         <nav>
-            <ul class="nav-effects"> <!-- Header nav bar -->
+            <ul> <!-- Header nav bar -->
                 <li>
                     <a href="#about-me">About Me</a>
                 </li>
@@ -36,7 +39,7 @@
 
     <!-- About Me article -->
     <article> 
-        <div id="about-me" class="about-me-wrapper"> 
+        <div id="about-me" class="about-me-wrap"> 
             <div class="about-me-grid-container"> <!-- Set the About-Me containter as a grid container -->
                 <div class="about-me-item about-me-title">
                     <p> About me </p>
@@ -50,7 +53,7 @@
 
     <!--  grid-->
     <article>
-        <div id="work" class="work-wrapper"> <!-- Id's coming from the header nav and a flex wrapper -->
+        <div id="work" class="work-wrap"> <!-- Id's coming from the header nav and a flex wrapper -->
             <div class="work-grid-container"> <!-- Work projects container is a grid container -->
                 <div class="work-item work-title"> <!-- Each item is a grid item -->
                     <p> Work </p>
@@ -58,42 +61,42 @@
                 <!-- Alt, title (tooltip) and open in new tab functionality added-->
                 <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
                 
-                <section onclick="projectClicked('Horiseon')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project Horiseon">
-                    <span class="span-background"> <!-- Span added to contain h3, lower text and wrapped background -->
+                <section onclick="projectClicked('Horiseon')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" style="cursor: pointer;" class="work-item-project Horiseon">
+                    <span class="background"> <!-- Span added to contain h3, lower text and wrapped background -->
                         <h3>Horiseon Services</h3>
-                        <span class="lower-text">HTML/CSS</span> <!-- A small class to apply for all grid lower text -->
+                        <span class="text">HTML/CSS</span> <!-- A small class to apply for all grid lower text -->
                     </span>
                 </section>
                 
                 <!-- All grids below follow same patern as described above until this article container is finished -->
                 <section onclick="projectClicked('TBD')" alt="TBD" title="TBD" style="cursor: pointer;" class="work-item-project A">
-                    <span class="span-background">
+                    <span class="background">
                         <h3>Still to come...</h3>
-                        <span class="lower-text">still to come...</span>
+                        <span class="text">still to come...</span>
                     </span>
                 </section>
                 <section onclick="projectClicked('TBD')" alt="TBD" title="TBD" style="cursor: pointer;" class="work-item-project B">
-                    <span class="span-background">
+                    <span class="background">
                         <h3>Still to come...</h3>
-                        <span class="lower-text">still to come...</span>
+                        <span class="text">still to come...</span>
                     </span>
                 </section>
                 <section onclick="projectClicked('TBD')" alt="TBD" title="TBD" style="cursor: pointer;" class="work-item-project C">
-                    <span class="span-background">
+                    <span class="background">
                         <h3>Still to come...</h3>
-                        <span class="lower-text">still to come...</span>
+                        <span class="text">still to come...</span>
                     </span>
                 </section>
                 <section onclick="projectClicked('TBD')" alt="TBD" title="TBD" style="cursor: pointer;" class="work-item-project D">
-                    <span class="span-background">
+                    <span class="background">
                         <h3>Still to come...</h3>
-                        <span class="lower-text">still to come...</span>
+                        <span class="text">still to come...</span>
                     </span>
                 </section>
                 <section onclick="projectClicked('TBD')" alt="TBD" title="TBD" style="cursor: pointer;" class="work-item-project E">
-                    <span class="span-background">
+                    <span class="background">
                         <h3>Still to come...</h3>
-                        <span class="lower-text">still to come...</span>
+                        <span class="text">still to come...</span>
                     </span>
                 </section>
 
@@ -103,25 +106,23 @@
 
     <!-- Footer content Grid-->
     <footer>
-        <div id="contact-me" class="footer-wrapper"> <!-- Id's coming from the header nav and a flex wrapper -->
+        <div id="contact-me" class="footer"> <!-- Id's coming from the header nav and a flex wrapper -->
             <div class="footer-container"> <!-- footer container is a grid container -->
                 <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
-                <div class="footer-grid-item contact-me"> <!-- Each item is a grid item --> 
+                <div class="footer-item contact-me"> <!-- Each item is a grid item --> 
                     Contact Me
                 </div>
-                <div class="footer-grid-item phone">
+                <div class="footer-item phone">
                     <a href="tel:201-736-9178" class="nav-effects">201-736-9178</a>
                 </div>
-                <div class="footer-grid-item email"> 
+                <div class="footer-item email"> 
                     <a href="mailto:ianhinnenkamp@gmail.com">ianhinnenkamp@gmail.com</a>
                 </div>
-                <div class="footer-grid-item git-hub"> 
-                    <a href="https://github.com/hinnenk2/" target="_blank">GitHub</a>
+                <div class="footer-item git-hub"> 
+                    <a href="https://github.com/hinnenk2/">GitHub</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    </script>
 </body>
 </html>
