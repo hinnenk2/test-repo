@@ -7,16 +7,14 @@
 
 /* Global variable definitions */
 :root {
-  --header-footer-background-color: #404040;
-  --lightskyblue: lightskyblue;
-  --lightgray: lightgray;
-  --about-me-work-border: #333366;
-  --rgba-border-color-opacity: rgba(135, 206, 250, 0.8);
+  --header-footer-background-color: #82b4cf;
+  --grey: rgb(74, 99, 114);
+  --lightgray: rgb(213, 182, 182);
+  --about-me-work-border: #c3588a;
+  --rgba-border-color-opacity: rgba(93, 237, 122, 0.8);
 }
 
-/* Start of Semantic code */
-
-/* Smoth Scrolling effect */
+/* Smooth Scrolling effect */
 html {
   scroll-behavior: smooth;
 }
@@ -662,46 +660,4 @@ footer a {
    /* This will be applied on any screen smaller than 575px */
 @media screen and  (max-width: 575px) {
   /* Start of footer grid smaller screen code changes at res */
-
-  
-  /* Start of semantic elents code changes */
-  header a {
-    font-size: 4vw;
-  }
-
-  header nav ul {
-    padding-right: 0px;
-    justify-content: center;
-  }
-  
-  header nav ul li {
-    padding: 2px 2px 2px 2px;
-  }
-
-  p{
-    font-size:5vw;
-  }
-
-  footer a {
-    font-size: 3.5vw;
-  }
-
-  .nav-effects a:hover{
-      /* Zoom in effect removed - this is matching the size of the text that is being hoverd*/
-      /* This is to avoid as much as possible any changes on text size when pressed */
-      font-size: 4vw; 
-  }
-
-  .footer-container a:hover{
-    font-size: 3.5vw;
-  }
-
-  /* gap removed from the container loked centered */
-  .footer-container {
-    gap: 0px 0px;
-  }
-
-  .footer-grid-item.git-hub{ /*Final adjustments*/
-    padding-left: 30px;
-  }
 }
