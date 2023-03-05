@@ -7,30 +7,20 @@
 
 /* Global variable definitions */
 :root {
-  --header-footer-background-color: #82b4cf;
+  --header-footer: #82b4cf;
   --grey: rgb(74, 99, 114);
-  --lightgray: rgb(213, 182, 182);
+  --pink: rgb(213, 182, 182);
   --about-me-work-border: #c3588a;
-  --rgba-border-color-opacity: rgba(93, 237, 122, 0.8);
+  --border-color: rgba(116, 193, 131, 0.8);
 }
 
-/* Smooth Scrolling effect */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Start of Header code */
+/* Header */
 header {
   display: flex; /* Flex container to display the child elements as flex with space between and wrap */
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
-  background-color: var(--header-footer-background-color); 
-}
-
-header h1 {
-  /* At bigger screens create space at left of h1 on header */
-  padding-left: 50px;
+  background-color: var(--header-footer); 
 }
 
 header nav ul {
@@ -59,14 +49,14 @@ header a {
   padding-right: 10px;
   padding-bottom: 5px;
   text-decoration: none;
-  border-bottom: 2px solid var(--lightskyblue);
-  color: var(--lightskyblue);
+  border-bottom: 2px solid var(--grey);
+  color: var(--grey);
 }
 /* End of header code */
 
 /* Start of body code */
 body{
-  background-color: var(--lightgray); /* Apply background to all of the body of the page */
+  background-color: rgb(165, 165, 178); /* Apply background to all of the body of the page */
   /* googleapis font family Karla */
   font-family: 'Martel', serif;
 }
@@ -75,14 +65,13 @@ body{
 /* Start of footer code */
 footer {
   /* Apply background to all of the body of the page */
-  background-color: var(--header-footer-background-color); 
-  color: var(--lightskyblue); /* Title color */
+  background-color: var(--header-footer); 
+  color: var(--grey); /* Title color */
 }
 
 footer a {
-  text-decoration: none;
-  border-bottom: 2px solid var(--lightskyblue); /* Border bottom */
-  color: var(--lightskyblue); /* anchor text color */
+  border-bottom: 2px solid var(--grey); /* Border bottom */
+  color: var(--grey); /* anchor text color */
   font-size: 1.8vw; /* View port font-size to help with responsiveness */
   font-weight: bold;
 }
@@ -93,9 +82,9 @@ footer a {
 
 /* Header nav hover */
 .nav-effects a:hover{ 
-  color: var(--lightskyblue);
+  color: var(--grey);
   font-weight: bold;
-  text-shadow: 0px 0px 20px var(--lightskyblue);
+  text-shadow: 0px 0px 20px var(--grey);
 }
 
 /* Work projects hover */
@@ -110,24 +99,23 @@ footer a {
 
 /* Footer hover */
 .footer-container a:hover{
-  color: var(--lightskyblue);
+  color: var(--grey);
   /*REMOVED - Zoom in effect with font-size 1.5vw
   Will revisit for next project iteration
   font-size: 2vw;*/
   font-weight: bold;
-  text-shadow: 0px 0px 20px var(--lightskyblue);
+  text-shadow: 0px 0px 20px var(--grey);
 }
 /* End of hover effects on multiple classes */
 
 /* Start of hero section with background */
 .hero { /* Here section is a flex container */
   height: 300px;
-  background-image: url("../images/Toronto-night.jpg");
-  border-bottom-left-radius: 30px 30px; /* border-radious bottom sides with bottom border changed also*/
-  border-bottom-right-radius: 30px 30px;
+  background-image: url("/Users/ianhinnenkamp/bootcamp/module-2-challenge/assets/images/Mountains.jpeg");
+
   background-size: cover; /* Image will cover the background */
   background-position:  100% 13%; /* Aligned the image to show the top of the tower*/
-  background-attachment: fixed; /* Image scrolls with the page */
+
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -156,7 +144,7 @@ footer a {
   width: 80%; /* Contain the grid to a maximum of 80% of the flex wrapper */
   display: grid;
   grid-template-columns: 1fr repeat(3, 2fr);  /* Create a 4X4 grid with the first column smaller than the others 3 */
-  grid-template-rows: repeat(4, 1fr); /* 4 rows of equal size */
+  grid-template-rows: repeat(2, 1fr); /* 4 rows of equal size */
   gap: 10px 10px; /* Gap on x and y grid */
 }
 
@@ -220,7 +208,7 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
+  border: .25vw solid var(--border-color);
 }
 
 .work-item-project.run-buddy {
@@ -233,7 +221,7 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
+  border: .25vw solid var(--border-color);
 }
 
 .work-item-project.password-generator {
@@ -248,7 +236,7 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
+  border: .25vw solid var(--border-color);
 }
 
 .work-item-project.web-api-code-quiz {
@@ -262,7 +250,7 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
+  border: .25vw solid var(--border-color);
 }
 
 .work-item-project.work-day-scheduler {
@@ -276,7 +264,7 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
+  border: .25vw solid var(--border-color);
 }
 
 .work-item-project.project01-group07 {
@@ -289,45 +277,11 @@ footer a {
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
+  border: .25vw solid var(--border-color);
 }
 
-.work-item-project.ghost-item {
-  grid-column: 4 / span 1;
-  /* Hide Text */
-  opacity: 0;
-  
-}
 /* End of FLEX CSS Main body code Work projects*/
 
-/* Start of span code */
-.span-background { /* Apply background to any span with this class name */
-  background-color: var(--lightskyblue);
-  position: relative;
-  line-height: 1.5;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 5%;
-  opacity: .8;
-}
-
-.span-background.title { /* Move away from the top/bottom container*/
-  /* Match the header Nav element on the flex container elements*/
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-/* Hero section cool subtitle with opacity of .95 */
-/* It needs to be adjusted to blend slighty with image selected with image selected */
-.span-background.opacity{
-  opacity: .95; /* Note: 1 is 0 opacity and 0 is fully transparent */
-  font-size: 30px;
-}
-
-.span-background.lower-text {
-  font-size: x-small;
-}
-/* End of span code */
 
 /* Start of footer class code */
 
@@ -358,11 +312,10 @@ footer a {
   grid-row: 1 / span 3;
   text-align: right;
   padding-right: 10px;
-  border-right: 2px solid var(--lightskyblue);
+  border-right: 2px solid var(--grey);
 }
 
 .footer-grid-item.phone{
-  /* Notice how all below are grid-row 2? CSS grid uses avaialble cells to allocate the element*/
   grid-row: 2;
 }
 
@@ -375,289 +328,3 @@ footer a {
 }
 /* End of footer class code */
 /* End of CSS Flex/Grid Footer non-semantic Code */
-
-
-/* Start of media queries for smaller resolutions */
-
-/* This will be applied on any screen smaller than 980px */
-@media screen and (max-width: 980px) {
-
-  /* Start of footer grid smaller screen code changes at res */
-  header {
-    justify-content: center;
-  }
-
-  header h1 {
-    /* At smaller screens remove space at left of h1 on header */
-    padding-left: 0px;
-  }
-
-  /* End of header smaller screen code chnages */
-
-  /* Lower than this resolution smaller change had to be made to account for the smaller resolutions even when havin flex or css grids */
-  .hero-subtitle {
-    padding-right: 30px;
-  }
-
-  .span-background.opacity{
-    font-size: 25px;
-  }
-
-  .hero {
-  background-attachment: scroll;
-  }
-
-  /* Start of about me grid smaller screen code changes */
-  .about-me-wrapper {
-    margin-top: 20px;
-  }
-
-  .about-me-grid-container {/*CSS Grid*/
-    /* Create a 3X6 grid for smaler screen */
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(5, 1fr);
-    /* Gap on x and y grid */
-    gap: 5px 5px; 
-  }
-
-  /* Target the about me text only */
-  .about-me-item.about-me-title {
-    padding-top: 0px;
-    font-size: 25px;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
-    text-align: center;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    border-right: none;
-    border-bottom: 2px solid var(--about-me-work-border);
-  }
-
-  .about-me-item.p1 {
-    padding-top: 5px;
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 2;
-  }
-
-  .about-me-item.p2 {
-    padding-top: 5px;
-    grid-column: 1 / span 3;
-    grid-row: 4 / span 2;
-    /* Push away the work container from the about me grid containter */
-    padding-bottom: 10px;
-  }
-  /* End of about me grid smaller screen code changes */
-
-  /* Start of work projects grid smaller screen code changes */
-  /* As part of my parent invisible ghost item test, I had to actually show it in smaller devices as you could click it on android but not IO's */
-  .work-grid-container .work-item-project.ghost-item:hover{
-    opacity: .8;
-  }
-  /* End of work projects grid smaller screen code changes */
-
-  /* Start of footer grid smaller screen code changes */
-  .footer-wrapper {
-    margin-top: 20px;
-  }
-
-  .footer-container { /* Desided to change the grid flow at this screen size for the footer */
-    /*width: 100% since to look better at lower screen size */
-    width: 100%;
-    /* Create a 3X6 grid for smaler screen */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2.5px 2.5px; /* Gap on x and y grid */
-  }
-
-  /*Extra padding to align as desired depending on different devices tested */
-
-  .footer-grid-item.contact-me {
-    padding-top: 0px;
-    font-size: 25px;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
-    text-align: center;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    /* Border right removed*/
-    border-right: none;
-    /* Border bottom added for new grid format */
-    border-bottom: 2px solid var(--lightskyblue);
-    padding-left: 25px;
-  }
-
-  .footer-grid-item.phone{
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
-    align-self: center;
-    padding-left: 10px;
-  }
-
-  .footer-grid-item.email{
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 2;
-    align-self: center;
-    padding-left: 25px;
-
-  }
-
-  .footer-grid-item.git-hub{
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 2;
-    align-self: center;
-    width: 20px;
-    padding-left: 80px;
-  }
-  /* End of footer grid smaller screen code changes at res */
-}
-
-/* This will be applied on any screen smaller than 768px */
-@media screen and (max-width: 768px) {
-  /* Start of footer grid smaller screen code changes at res */
-
-  /* Start of semantic elents code changes */
-  header a {
-    /* Allow screen changes relatively to the viewport of the width available*/
-    font-size: 3vw;
-  }
-
-  footer a {
-    font-size: 3vw;
-  }
-
-
-  /* End of semantic elents code changes */
-
-  /* Start of class code changes */
-  .nav-effects a:hover{
-      /* Zoom in effect removed - this is matching the size of the text that is being hoverd*/
-      /* This is to avoid as much as possible any changes on text size when pressed */
-      font-size: 3vw; 
-  }
-
-  .footer-container a:hover{
-    font-size: 1.8vw;
-  }
-
-  /* Change image attachment to scroll to avoid following the image */
-  /* This partially works on android phones tested, it does not work in IO's as of December 13, 2020 */
-  .hero {
-    background-attachment: scroll;
-  }
-    
-  .about-me-grid-container {/*CSS Grid*/
-    /* Create a 3X6 grid for smaler screen with one column .5fr or smaller than 1 fraction of the other 4 rows */
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: .5fr repeat(4, 1fr);
-    /* Gap on x and y grid */
-    gap: 5px 5px; 
-  }
-
-  /* Target the about me text only */
-  .about-me-item.about-me-title {
-    padding-top: 0px;
-    font-size: 25px;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
-    text-align: center;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    border-right: none;
-    border-bottom: 2px solid var(--about-me-work-border);
-    align-self: start;
-  }
-
-  .about-me-item.p1 { /* Avoid too much space in the paragraph by removing parent paddings */
-    padding-left: 0px;
-  }
-
-  .about-me-item.p2 { /* Avoid too much space in the paragraph by removing parent paddings */
-    padding-left: 0px;
-  }
-
-  .work-wrapper {
-    margin-top: 15px;
-  }
-
-  .work-grid-container {/* CSS Grid */
-    /* Create a 3X9 grid for smaler screen */
-    /* Will assign size directly to avoid grid span */
-    grid-template-columns: repeat(3, 1fr);
-    /* .5fr is to fix spacing on main title item */
-    grid-template-rows: .5fr repeat(10, 1fr);
-    /* Gap on x and y grid */
-    gap: 2.5px 2.5px;
-  }
-
-  /* Target the about me text only */
-  .work-item.work-title {
-    font-size: 35px;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
-    text-align: center;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    border-bottom: 2px solid var(--about-me-work-border);
-    border-right: none;
-    align-self: start;
-  }
-
-  .work-item-project.challenge-1-refactor {
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 3;
-    align-items: flex-end;
-    text-align: center;
-    background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
-  }
-
-  .work-item-project.run-buddy {
-    grid-column: 1 /span 3;
-    grid-row: 5 / span 2;
-    align-items: flex-end;
-    text-align: center;
-    background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
-  }
-  
-  .work-item-project.password-generator {
-    grid-column: 1 /span 3;
-    grid-row: 7 / span 1;
-    /* By padding top from run buddy all of my grid grew in size. Allowing proper look. */
-    padding-top: 30px;
-    background-position: scroll;
-    text-align: center;
-  }
-  
-  .work-item-project.web-api-code-quiz {
-    grid-column: 1 /span 3;
-    grid-row: 8 / span 1;
-    background-position: scroll;
-    text-align: center;
-  }
-  
-  .work-item-project.work-day-scheduler {
-    grid-column: 1 /span 3;
-    grid-row: 9 / span 1;
-    background-position: scroll;
-    text-align: center;
-  }
-
-  .work-item-project.project01-group07  {
-    grid-column: 1 /span 3;
-    grid-row: 10 / span 1;
-    align-items: flex-end;
-    text-align: center;
-    background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
-  }
-  
-  .footer-wrapper { /* Get the footer closer to the work grid container at the top*/
-  margin-top: 10px;
-  }
-
-  /* End of footer grid smaller screen code changes at res */
-}
-
-   /* This will be applied on any screen smaller than 575px */
-@media screen and  (max-width: 575px) {
-  /* Start of footer grid smaller screen code changes at res */
-}

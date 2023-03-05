@@ -34,12 +34,10 @@
     <section class="hero">
         <!-- Flex Container-->
         <div class="hero-subtitle">           
-                <!-- Span used to provide a span background as well as change the opacity of both the span and the text -->
-                <span class="span-background opacity">Coding is Fun!</span>
         </div>
     </section>
 
-    <!-- About Me article grid-->
+    <!-- About Me article -->
     <article> 
         <div id="about-me" class="about-me-wrapper"> <!-- Id's coming from the header nav and a flex wrapper -->
             <div class="about-me-grid-container"> <!-- About me containter is a grid container -->
@@ -47,11 +45,9 @@
                     <p> About me </p>
                 </div>
                 <div class="about-me-item p1">
-                    <p>Achieving goals together means spending time doing what we love with people we care about. My goal is to do what I love with professionalism that will benefit us both in any future endeavors we work on.</p>
+                    <p>I am currently working as a research scientist in the field of gene therapy.  My responsibilities include designing and developing analytical templates for the analysis of raw data exported off of hard instruments.  I have entered the field of coding with regards to the instruments that I work on, so hopefully one day, I can improve on their performance and thoughput.</p>
                 </div>
-                <div class="about-me-item p2">
-                    <p>I am currently working as an application support analyst at BMO Capital markets. My job entails making sure that our production environment runs smoothly.</p>
-                </div>  
+               
             </div>
         </div> 
     </article>
@@ -63,56 +59,48 @@
                 <div class="work-item work-title"> <!-- Each item is a grid item -->
                     <p> Work </p>
                 </div>
-                <!-- Clickable grid link functionality achieved with a javascript function as anchor wrap did not work (tried) as intended for me -->
                 <!-- Alt, title (tooltip) and open in new tab functionality added-->
                 <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
-                <div onclick="projectClicked('challenge-1-refactor')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project challenge-1-refactor">
+                
+                <section onclick="projectClicked('challenge-1-refactor')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project challenge-1-refactor">
                     <span class="span-background"> <!-- Span added to contain h3, lower text and wrapped background -->
                         <h3>Horiseon Services</h3>
                         <span class="lower-text">HTML/CSS</span> <!-- A small class to apply for all grid lower text -->
                     </span>
-                </div>
-                <!-- All grids below follow same patern as described above until this article container is finished -->
-                <div onclick="projectClicked('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="work-item-project run-buddy">
-                    <span class="span-background">
-                        <h3>Run Buddy</h3>
-                        <span class="lower-text">HTML/CSS</span>
-                    </span>
-                </div>
-                <div onclick="projectClicked('password-generator')" alt="Image Displaying the Password Generator landing Page" title="Password Generator landing page" style="cursor: pointer;" class="work-item-project password-generator">
-                    <span class="span-background">
-                        <h3>Password Generator</h3>
-                        <span class="lower-text">CSS/Javascript</span>
-                    </span>
-                </div>
-                <div onclick="projectClicked('web-api-code-quiz')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="work-item-project web-api-code-quiz">
-                    <span class="span-background">
-                        <h3>Web API Code Quiz</h3>
-                        <span class="lower-text">Javascript/CSS/LocalStorage</span>
-                    </span>
-                </div>
-                <div onclick="projectClicked('work-day-scheduler')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="work-item-project work-day-scheduler">
-                    <span class="span-background">
-                        <h3>Work Day Scheduler</h3>
-                        <span class="lower-text">Dynamic Javascript/Bootstrap</span>
-                    </span>
-                </div>
-                <div onclick="projectClicked('project01-group07')" alt="Image Displaying the Project01 Group07 landing Page" title="Project01 Group07 landing page" style="cursor: pointer;" class="work-item-project project01-group07">
-                    <span class="span-background">
-                        <h3>Project01 Group07</h3>
-                        <span class="lower-text">HTML/CSS/Javascript</span>
-                    </span>
-                </div>
-
+                </section>
                 
-
-
-                <div class="work-item-project ghost-item">
+                <!-- All grids below follow same patern as described above until this article container is finished -->
+                <section onclick="projectClicked('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="work-item-project run-buddy">
                     <span class="span-background">
-                        <h3>Coming soon!</h3>
-                        <span class="lower-text">TBD</span>
+                        <h3>Still to come...</h3>
+                        <span class="lower-text">still to come...</span>
                     </span>
-                </div>
+                </section>
+                <section onclick="projectClicked('password-generator')" alt="Image Displaying the Password Generator landing Page" title="Password Generator landing page" style="cursor: pointer;" class="work-item-project password-generator">
+                    <span class="span-background">
+                        <h3>Still to come...</h3>
+                        <span class="lower-text">still to come...</span>
+                    </span>
+                </section>
+                <section onclick="projectClicked('web-api-code-quiz')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="work-item-project web-api-code-quiz">
+                    <span class="span-background">
+                        <h3>Still to come...</h3>
+                        <span class="lower-text">still to come...</span>
+                    </span>
+                </section>
+                <section onclick="projectClicked('work-day-scheduler')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="work-item-project work-day-scheduler">
+                    <span class="span-background">
+                        <h3>Still to come...</h3>
+                        <span class="lower-text">still to come...</span>
+                    </span>
+                </section>
+                <section onclick="projectClicked('project01-group07')" alt="Image Displaying the Project01 Group07 landing Page" title="Project01 Group07 landing page" style="cursor: pointer;" class="work-item-project project01-group07">
+                    <span class="span-background">
+                        <h3>Still to come...</h3>
+                        <span class="lower-text">still to come...</span>
+                    </span>
+                </section>
+
             </div>
         </div>
     </article>
@@ -126,13 +114,13 @@
                     Contact Me
                 </div>
                 <div class="footer-grid-item phone">
-                    <a href="tel:416-629-7952" class="nav-effects">416-629-7952</a>
+                    <a href="tel:201-736-9178" class="nav-effects">201-736-9178</a>
                 </div>
                 <div class="footer-grid-item email"> 
-                    <a href="mailto:esroleo@gmail.com">esroleo@gmail.com</a>
+                    <a href="mailto:ianhinnenkamp@gmail.com">ianhinnenkamp@gmail.com</a>
                 </div>
                 <div class="footer-grid-item git-hub"> 
-                    <a href="https://github.com/esroleo/" target="_blank">GitHub</a>
+                    <a href="https://github.com/hinnenk2/" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
