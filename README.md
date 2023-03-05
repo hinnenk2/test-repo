@@ -12,11 +12,11 @@ HW Assignment for Week-2 Material
 
 Desktop screen:
 
-![Top-Page-Area](./assets/images/main-page.JPG?raw=true "Top-Page-Area")
+![Top-Page-Area](./assets/images/main-page.png "Top-Page-Area")
 
 Smaller devices screen example:
 
-![Top-Page-Area](./assets/images/main-page-smaller.JPG?raw=true "Top-Page-Area")
+![Top-Page-Area](./assets/images/smaller-page.png "Top-Page-Area")
 
 <a name="web-address"></a>
 ## 2. How to Get There
@@ -35,19 +35,4 @@ https://
 
 Desktop screen:
 
-![nav-menu](./assets/images/nav-menu.JPG?raw=true "Navigational Menu")
-
-Smaller devices screen example:
-
-![nav-menu](./assets/images/nav-menu.JPG?raw=true "Navigational Menu")
-
-
-### Explore the rest of the page by scrolling up or down.
-
-Desktop screen:
-
-![body-section](./assets/images/navigate-website.JPG?raw=true "Body Section")
-
-Smaller devices screen example:
-
-![body-section](./assets/images/navigate-website-smaller.JPG?raw=true "Body Section")
+![nav-menu](./assets/images/nav-panel "Navigational Menu")
