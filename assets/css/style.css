@@ -78,40 +78,12 @@ footer a {
 /* End footer code */
 /* End of Semantic code */
 
-/* Start of hover effects on multiple classes */
 
-/* Header nav hover */
-.nav-effects a:hover{ 
-  color: var(--grey);
-  font-weight: bold;
-  text-shadow: 0px 0px 20px var(--grey);
-}
-
-/* Work projects hover */
-.work-grid-container div:hover{ /* Create the ilussion of a brighter image once hovered */
-  mix-blend-mode: color-burn;
-}
-
-/* The ghost item is a cell that is invisible, this is intentional for training showcasing purposes. IT IS INTENTIONAL TO BE INVISIBLE :)*/
-.work-grid-container .work-item-project.ghost-item:hover{ /* On over ghost item it will not reveal it! */
-  opacity: 0;
-}
-
-/* Footer hover */
-.footer-container a:hover{
-  color: var(--grey);
-  /*REMOVED - Zoom in effect with font-size 1.5vw
-  Will revisit for next project iteration
-  font-size: 2vw;*/
-  font-weight: bold;
-  text-shadow: 0px 0px 20px var(--grey);
-}
-/* End of hover effects on multiple classes */
 
 /* Start of hero section with background */
 .hero { /* Here section is a flex container */
   height: 300px;
-  background-image: url("/Users/ianhinnenkamp/bootcamp/module-2-challenge/assets/images/Mountains.jpeg");
+  background-image: url("/Users/ianhinnenkamp/bootcamp/module-2-challenge/assets/images/Mountain.jpeg");
 
   background-size: cover; /* Image will cover the background */
   background-position:  100% 13%; /* Aligned the image to show the top of the tower*/
@@ -123,13 +95,7 @@ footer a {
   align-items: flex-end;
 }
 
-.hero-subtitle { /* Styling to the subtitle the Hero container */
-  padding-bottom: 15px;
-  padding-right: 15px;
-}
 /* End of hero section with background */
-
-
 
 /* Start of FLEX CSS Main body code About Me*/
 .about-me-wrapper { /* Flex wrapper */
@@ -157,17 +123,12 @@ footer a {
   border-right: 2px solid var(--about-me-work-border);
 }
 
-.about-me-item.p1 {
+.about-me {
   padding-left: 10px;
   grid-column: 2 / span 3;
   grid-row: 1 / span 2;
 }
 
-.about-me-item.p2 {
-  padding-left: 10px;
-  grid-column: 2 / span 3;
-  grid-row: 3 / span 2;
-}
 /* End of FLEX CSS Main body code About me*/
 
 
@@ -198,7 +159,7 @@ footer a {
   border-right: 2px solid var(--about-me-work-border);
 }
 
-.work-item-project.challenge-1-refactor { /* Grid cells with embedded images */
+.work-item-project.Horiseon { /* Grid cells with embedded images */
   grid-column: 2 / span 2;
   grid-row: 1 / span 6;
   background-image: url("../images/challeng-1-refactor-code-smaller.JPG");
@@ -211,10 +172,10 @@ footer a {
   border: .25vw solid var(--border-color);
 }
 
-.work-item-project.run-buddy {
+.work-item-project.A {
   grid-column: 3 /span 1;
   grid-row: 7 / span 3;
-  background-image: url("../images/run-buddy-project.JPG");
+  background-image: url("../images/A-project.JPG");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -224,11 +185,11 @@ footer a {
   border: .25vw solid var(--border-color);
 }
 
-.work-item-project.password-generator {
+.work-item-project.B {
   grid-column: 2 / span 1;
   grid-row: 7 / span 3; 
   /* Royalty free image */
-  background-image: url("../images/password-generator.JPG");
+  background-image: url("../images/B.JPG");
   background-size: cover;
   /* Allow the background image to align */
   display: flex; /*Flex required to move the element as flex */
@@ -239,11 +200,11 @@ footer a {
   border: .25vw solid var(--border-color);
 }
 
-.work-item-project.web-api-code-quiz {
+.work-item-project.C {
   grid-column: 4 / span 1;
   grid-row: 1 / span 3;
   /* Royalty free image */
-  background-image: url("../images/web-api-code-quiz.JPG");
+  background-image: url("../images/C.JPG");
   background-size: 300px 200px, cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -253,11 +214,11 @@ footer a {
   border: .25vw solid var(--border-color);
 }
 
-.work-item-project.work-day-scheduler {
+.work-item-project.D {
   grid-column: 4 / span 1;
   grid-row: 4 / span 3;
   /* Royalty free image */
-  background-image: url("../images/work-day-scheduler.JPG");
+  background-image: url("../images/D.JPG");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -267,7 +228,7 @@ footer a {
   border: .25vw solid var(--border-color);
 }
 
-.work-item-project.project01-group07 {
+.work-item-project.E {
   grid-column: 4 /span 1;
   grid-row: 7 / span 3;
   background-image: url("../images/project1-group07.JPG");
