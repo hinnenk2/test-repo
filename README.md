@@ -1,5 +1,3 @@
-# module-2-challenge
-HW Assignment for Week-2 Material
 
 1. [ Description. ](#desc)
 2. [ Web Address. ](#web-address)
